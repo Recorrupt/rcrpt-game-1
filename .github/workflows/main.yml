@@ -1,0 +1,51 @@
+name: Game Release Build Check
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name:  Build Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0'
+      
+      - name: Restore dependencies
+        run: dotnet restore
+      
+      - name: Build release
+        run: dotnet build --configuration Release  # Adjust this command to build your release
+
+      - name: Final Echo
+        run: echo This is a Recorrupt Action.
+
+      # Add additional steps here to perform any other necessary tasks
+
+  check:
+    name: Check for Errors
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.x'  # Use the .NET version you need for your project
+      
+      - name: Restore dependencies
+        run: dotnet restore
+      
+      - name: Run tests and check for errors
+        run: dotnet test  # Adjust this command to run your tests and check for errors
+
+      # Add additional steps here to perform any other necessary checks
