@@ -1,0 +1,15 @@
+/workspaces/rcrpt-game-1/obj/Debug/net8.0/rcrpt-game-1.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/rcrpt-game-1/obj/Debug/net8.0/rcrpt-game-1.AssemblyInfoInputs.cache
+/workspaces/rcrpt-game-1/obj/Debug/net8.0/rcrpt-game-1.AssemblyInfo.cs
+/workspaces/rcrpt-game-1/obj/Debug/net8.0/rcrpt-game-1.csproj.CoreCompileInputs.cache
+/workspaces/rcrpt-game-1/obj/Debug/net8.0/rcrpt-game-1.sourcelink.json
+/workspaces/rcrpt-game-1/bin/Debug/net8.0/rcrpt-game-1
+/workspaces/rcrpt-game-1/bin/Debug/net8.0/rcrpt-game-1.deps.json
+/workspaces/rcrpt-game-1/bin/Debug/net8.0/rcrpt-game-1.runtimeconfig.json
+/workspaces/rcrpt-game-1/bin/Debug/net8.0/rcrpt-game-1.dll
+/workspaces/rcrpt-game-1/bin/Debug/net8.0/rcrpt-game-1.pdb
+/workspaces/rcrpt-game-1/obj/Debug/net8.0/rcrpt-game-1.dll
+/workspaces/rcrpt-game-1/obj/Debug/net8.0/refint/rcrpt-game-1.dll
+/workspaces/rcrpt-game-1/obj/Debug/net8.0/rcrpt-game-1.pdb
+/workspaces/rcrpt-game-1/obj/Debug/net8.0/rcrpt-game-1.genruntimeconfig.cache
+/workspaces/rcrpt-game-1/obj/Debug/net8.0/ref/rcrpt-game-1.dll
