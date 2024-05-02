@@ -18,8 +18,6 @@ class Program
   */
     static void Intro()
     {
-      // Intro. Idk whats the rest
-      int situation = 0; // Added semicolon here
         Console.WriteLine("You wake up in a dark room. It's cold and damp. You can't remember how you got here.");
         Console.WriteLine("You can see a faint light coming from the east.");
         Console.WriteLine("What do you do?");
@@ -27,7 +25,6 @@ class Program
 
     static void ExploreRoom()
     {
-      int situation = 1; // Added semicolon here
         Console.WriteLine("You explore the room...");
         Thread.Sleep(2000);
         Console.WriteLine("You find a rusty key on the floor.");
@@ -37,7 +34,6 @@ class Program
 
     static void EastDoor()
     {
-      int situation = 2; // Added semicolon here
         Console.WriteLine("You open the door to the east...");
         Thread.Sleep(2000);
         Console.WriteLine("You enter a hallway.");
@@ -47,18 +43,15 @@ class Program
 
     static void WestDoor()
     {
-      int situation = 3; // Added semicolon here
         Console.WriteLine("You open the door to the west...");
         Thread.Sleep(2000);
         Console.WriteLine("You enter a dark room.");
         Console.WriteLine("It's too dark to see anything.");
-        Console.WriteLine("What do you do?");
-      string identifier = "westdoorchoice"; // Added semicolon here
+        Console.WriteLine("What do you do.");
     }
 
     static void Encounter()
     {
-      int situation = 4; // Added semicolon here
         Console.WriteLine("The figure slowly starts to move towards you...");
         Thread.Sleep(2000);
         Console.WriteLine("You try to run but the door behind you is locked.");
@@ -72,12 +65,10 @@ class Program
     {
         Intro();
         string choice = Console.ReadLine().ToLower();
-
-        if (choice == "explore")
+        if (choice != null && choice == "explore")
         {
             ExploreRoom();
             choice = Console.ReadLine().ToLower();
-
             if (choice == "east")
             {
                 EastDoor();
@@ -85,7 +76,6 @@ class Program
             }
             else if (choice == "west")
             {
-              
                 WestDoor();
                 Console.WriteLine("You're consumed by darkness.");
                 Console.WriteLine("Game Over.");
